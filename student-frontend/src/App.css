@@ -1,0 +1,165 @@
+/* ================================
+   Main Container
+================================ */
+
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+
+/* ================================
+   Heading
+================================ */
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 35px;
+  color: #1f2937;
+}
+
+h2 {
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+
+/* ================================
+   Add Student Card
+================================ */
+
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ================================
+   Add Button
+================================ */
+
+.add-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   Student Table Card
+================================ */
+
+.table-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.student-table th {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.student-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.student-table tr:hover {
+  background: #f8fafc;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 600px) {
+
+  .app-container {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .form-card,
+  .table-card {
+    padding: 20px;
+  }
+
+  .student-table {
+    font-size: 14px;
+  }
+
+  .student-table th,
+  .student-table td {
+    padding: 10px;
+  }
+}
